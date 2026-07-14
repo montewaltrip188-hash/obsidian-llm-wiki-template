@@ -1,0 +1,24 @@
+{
+  "autoFold": false,
+  "hideEmptyEntry": true,
+  "hideEmptyEntryInSideDock": false,
+  "propertiesVisible": "",
+  "propertyHideAll": "hide",
+  "entries": [
+    {
+      "name": "",
+      "hide": {
+        "tableInactive": true,
+        "tableActive": true
+      }
+    },
+    {
+      "name": "banner",
+      "hide": {
+        "tableInactive": true
+      }
+    }
+  ],
+  "propertiesInvisible": "banner",
+  "propertiesInvisibleAlways": ""
+}

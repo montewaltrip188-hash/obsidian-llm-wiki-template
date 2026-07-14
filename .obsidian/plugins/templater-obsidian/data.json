@@ -1,0 +1,84 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "Assistants",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "Assistants/Templater/Scrip（用于更新，勿删）",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "Connections/部门",
+      "template": "Assistants/Templater/人脉/部门卡片模板.md"
+    },
+    {
+      "folder": "Connections/公司",
+      "template": "Assistants/Templater/人脉/公司卡片模板.md"
+    },
+    {
+      "folder": "Connections/人物",
+      "template": "Assistants/Templater/人脉/人物卡片模板.md"
+    },
+    {
+      "folder": "Connections/物品",
+      "template": "Assistants/Templater/人脉/物品卡片模板.md"
+    },
+    {
+      "folder": "Documents/Dailynote",
+      "template": "Assistants/Templater/日记/日记模板1.md"
+    },
+    {
+      "folder": "Documents/I.P.A.R.A/0-收集箱",
+      "template": "Assistants/Templater/笔记/笔记通用模板.md"
+    },
+    {
+      "folder": "Documents/I.P.A.R.A/工作领域",
+      "template": "Assistants/Templater/笔记/笔记通用模板.md"
+    },
+    {
+      "folder": "Documents/I.P.A.R.A/生活领域",
+      "template": "Assistants/Templater/笔记/笔记通用模板.md"
+    },
+    {
+      "folder": "Documents/I.P.A.R.A/学习领域",
+      "template": "Assistants/Templater/笔记/笔记通用模板.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    "Assistants/Modules/输入模块/嵌入meta-bind模块（atl+1).md",
+    "Assistants/Modules/输入模块/嵌入2分栏模块（alt+2）.md",
+    "Assistants/Modules/输入模块/嵌入3分栏模块（alt+3）.md",
+    "Assistants/Modules/输入模块/嵌入callout模块（alt+4）.md",
+    "Assistants/Modules/输入模块/嵌入tasks模块(alt+r).md",
+    "Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-更新模块.md",
+    "Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-远程更新备用1.md",
+    "Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-更新使用指南.md",
+    "Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-远程更新备用2.md",
+    "Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-远程更新备用3.md",
+    "Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-远程更新备用4.md",
+    "Assistants/Templater/移动/移动至-工作领域-归档.md",
+    "Assistants/Templater/移动/移动至-工作领域-收集.md",
+    "Assistants/Templater/移动/移动至-工作领域-项目.md",
+    "Assistants/Templater/移动/移动至-工作领域-资源.md",
+    "Assistants/Templater/移动/移动至-学习领域-归档.md",
+    "Assistants/Templater/移动/移动至-学习领域-收集.md",
+    "Assistants/Templater/移动/移动至-学习领域-项目.md",
+    "Assistants/Templater/移动/移动至-学习领域-资源.md",
+    "Assistants/Templater/移动/移动至-生活领域-归档.md",
+    "Assistants/Templater/移动/移动至-生活领域-收集.md",
+    "Assistants/Templater/移动/移动至-生活领域-项目.md",
+    "Assistants/Templater/移动/移动至-生活领域-资源.md",
+    "Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-模板选择器.md"
+  ],
+  "startup_templates": [],
+  "enable_ribbon_icon": true
+}

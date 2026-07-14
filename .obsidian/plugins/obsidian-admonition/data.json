@@ -1,0 +1,310 @@
+{
+  "userAdmonitions": {
+    "blank": {
+      "type": "blank",
+      "color": "255, 255, 255",
+      "icon": {
+        "name": "border-style",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": " "
+    },
+    "thm": {
+      "type": "thm",
+      "color": "41, 187, 22",
+      "icon": {
+        "name": "hand-point-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "定理"
+    },
+    "def": {
+      "type": "def",
+      "color": "13, 127, 227",
+      "icon": {
+        "name": "hand-point-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "引理"
+    },
+    "lem": {
+      "type": "lem",
+      "color": "68, 201, 219",
+      "icon": {
+        "name": "hand-point-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "推论"
+    },
+    "cor": {
+      "type": "cor",
+      "color": "23, 86, 232",
+      "icon": {
+        "name": "hand-point-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "引文"
+    },
+    "kanban": {
+      "type": "kanban",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "col2": {
+      "type": "col2",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "address-book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "col3": {
+      "type": "col3",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "col4": {
+      "type": "col4",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "address-book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "hibox": {
+      "type": "hibox",
+      "color": "68, 161, 243",
+      "icon": {
+        "name": "adjust",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
+    },
+    "table": {
+      "type": "table",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "table",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
+    },
+    "flex": {
+      "type": "flex",
+      "color": "33, 145, 61",
+      "icon": {
+        "name": "address-card",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
+    },
+    "music": {
+      "type": "music",
+      "color": "58, 223, 212",
+      "icon": {
+        "name": "music",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "icon": {
+      "type": "icon",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "infobox": {
+      "type": "infobox",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "grid": {
+      "type": "grid",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "masonry": {
+      "type": "masonry",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "books": {
+      "type": "books",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "tasks": {
+      "type": "tasks",
+      "color": "191, 79, 79",
+      "icon": {
+        "name": "tasks",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "info": {
+      "type": "info",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "dog",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "clean": {
+      "type": "clean",
+      "color": "47, 86, 26",
+      "icon": {
+        "name": "broom",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "drink": {
+      "type": "drink",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "hand-holding-water",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "roam": {
+      "type": "roam",
+      "color": "151, 78, 132",
+      "icon": {
+        "type": "octicons",
+        "name": "git-branch"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "habit": {
+      "type": "habit",
+      "color": "51, 132, 66",
+      "icon": {
+        "name": "running",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "review": {
+      "type": "review",
+      "color": "#7d7d7d",
+      "icon": {
+        "type": "octicons",
+        "name": "repo-forked"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "11.0.3",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "icons": [
+    "octicons"
+  ],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": true,
+  "snippetPath": "custom-admonitions.c9c6cb",
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": true
+  },
+  "syncLinks": false,
+  "allowMSSyntax": true,
+  "msSyntaxIndented": true,
+  "livePreviewMS": true,
+  "warnedAboutNC": true,
+  "enableMarkdownProcessor": false
+}

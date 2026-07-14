@@ -1,0 +1,9 @@
+{
+  "id": "knowledge-workbench",
+  "name": "Knowledge Workbench",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "知识库工作台：导航矩阵 + 计划任务 + 随手记",
+  "author": "自用",
+  "isDesktopOnly": true
+}

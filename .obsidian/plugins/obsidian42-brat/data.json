@@ -1,0 +1,29 @@
+{
+  "pluginList": [
+    "SebastianMC/obsidian-custom-sort",
+    "YishenTu/claudian"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "SebastianMC/obsidian-custom-sort",
+      "version": "latest"
+    },
+    {
+      "repo": "YishenTu/claudian",
+      "version": ""
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "globalTokenName": "",
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false
+}

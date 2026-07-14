@@ -37,9 +37,9 @@ skills/**
 .obsidian/query.json
 .obsidian/surfing-bookmark.json
 
-# .obsidian/plugins/ 只保留 quick-archive
-.obsidian/plugins/*
-!.obsidian/plugins/quick-archive/
+# .obsidian/plugins/ 排除 node_modules 和冲突文件
+.obsidian/plugins/**/node_modules/
+.obsidian/plugins/**/data-冲突-*
 
 # .claudian/ 个人数据
 .claudian/sessions/

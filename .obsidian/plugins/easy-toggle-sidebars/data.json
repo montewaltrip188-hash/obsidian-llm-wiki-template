@@ -1,0 +1,14 @@
+{
+  "useRightMouse": true,
+  "useMiddleMouse": false,
+  "moveThresholdHor": 50,
+  "moveThresholdVert": 50,
+  "autoHide": false,
+  "autoHideRibbon": true,
+  "autoMinRootWidth": true,
+  "minRootWidth": 300,
+  "dblClickDelay": 450,
+  "togglePin": true,
+  "moveThreshold": 150,
+  "savedVersion": "0.0.0"
+}

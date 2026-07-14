@@ -1,0 +1,1109 @@
+{
+  "devMode": false,
+  "ignoreCodeBlockRestrictions": false,
+  "preferredDateFormat": "YYYY-MM-DD",
+  "firstWeekday": {
+    "index": 1,
+    "name": "Monday",
+    "shortName": "Mo"
+  },
+  "syncInterval": 200,
+  "minSyncInterval": 50,
+  "maxSyncInterval": 1000,
+  "enableJs": true,
+  "viewFieldDisplayNullAsEmpty": true,
+  "enableSyntaxHighlighting": true,
+  "enableEditorRightClickMenu": true,
+  "inputFieldTemplates": [],
+  "buttonTemplates": [
+    {
+      "label": "Mita-Ai..",
+      "icon": "search",
+      "hidden": false,
+      "class": "qita-4col",
+      "tooltip": "",
+      "id": "mita-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "open",
+          "link": "https://metaso.cn/"
+        }
+      ]
+    },
+    {
+      "label": "Roam.note",
+      "icon": "brain-circuit",
+      "hidden": false,
+      "class": "qita-4col",
+      "tooltip": "",
+      "id": "manyoubiji-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "random-note"
+        }
+      ]
+    },
+    {
+      "label": "Dailynote",
+      "icon": "sticky-note",
+      "hidden": false,
+      "class": "qita-4col",
+      "tooltip": "",
+      "id": "riji-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "daily-notes"
+        }
+      ]
+    },
+    {
+      "label": "Projects.",
+      "icon": "layout-list",
+      "hidden": false,
+      "class": "para-4col",
+      "tooltip": "",
+      "id": "Project-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:87f09f63-b2d4-41e9-802c-fb7844189ee5"
+        }
+      ]
+    },
+    {
+      "label": "Resources",
+      "icon": "waypoints",
+      "hidden": false,
+      "class": "para-4col",
+      "tooltip": "",
+      "id": "Resource-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:762e745f-c470-46a9-8419-35a1518bcf20"
+        }
+      ]
+    },
+    {
+      "label": "Archives.",
+      "icon": "archive",
+      "hidden": false,
+      "class": "para-4col",
+      "tooltip": "",
+      "id": "Archive-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:a97bd5a4-5475-4b1e-9e3b-fffdb7fb5831"
+        },
+        {
+          "type": "command",
+          "command": "quickadd:choice:270fac2d-c9aa-4aa0-97b4-0bd95827588e"
+        }
+      ]
+    },
+    {
+      "label": "Inbox....",
+      "icon": "package-open",
+      "hidden": false,
+      "class": "para-4col",
+      "tooltip": "",
+      "id": "inbox-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:e823d54a-f542-401d-bebe-d4d44b432266"
+        }
+      ]
+    },
+    {
+      "label": "Openai3.5",
+      "icon": "bot",
+      "hidden": false,
+      "class": "qita-4col",
+      "tooltip": "",
+      "id": "GPT-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "open",
+          "link": "https://chat.openai.com/"
+        }
+      ]
+    },
+    {
+      "label": "Git hub...",
+      "icon": "github",
+      "hidden": false,
+      "class": "qita-4col",
+      "tooltip": "",
+      "id": "github-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "open",
+          "link": "https://github.com/"
+        }
+      ]
+    },
+    {
+      "label": "人物卡片.",
+      "icon": "contact",
+      "hidden": false,
+      "class": "connections-4col",
+      "tooltip": "",
+      "id": "renwukapian-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:d638770f-9d79-48aa-8875-450a48ded209"
+        }
+      ]
+    },
+    {
+      "label": "公司卡片.",
+      "icon": "building-2",
+      "hidden": false,
+      "class": "connections-4col",
+      "tooltip": "",
+      "id": "gongsikapian-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:10c0f39a-04b3-4b09-abb0-a171597efe3f"
+        }
+      ]
+    },
+    {
+      "label": "部门卡片.",
+      "icon": "network",
+      "hidden": false,
+      "class": "connections-4col",
+      "tooltip": "",
+      "id": "bumenkapian-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:0c5ff72e-b7ec-41e6-96a8-84a6b62503f1"
+        }
+      ]
+    },
+    {
+      "label": "Readingnote",
+      "icon": "library-big",
+      "hidden": false,
+      "class": "qita-4col",
+      "tooltip": "",
+      "id": "readingnote-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:5a007903-d638-4512-826b-2a252a3270c0"
+        }
+      ]
+    },
+    {
+      "label": "物品卡片.",
+      "icon": "package-plus",
+      "hidden": false,
+      "class": "connections-4col",
+      "tooltip": "",
+      "id": "wupinkapian-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:d4a0bed3-f430-487c-a7d9-30a87cf2d496"
+        }
+      ]
+    },
+    {
+      "label": "Meeting..",
+      "icon": "projector",
+      "hidden": false,
+      "class": "cardnotes-4col",
+      "tooltip": "",
+      "id": "huiyi-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:7bd824b9-825a-4864-81fb-b1991ac83d8b"
+        }
+      ]
+    },
+    {
+      "label": "Canvas...",
+      "icon": "app-window",
+      "hidden": false,
+      "class": "cardnotes-4col",
+      "tooltip": "",
+      "id": "canvas-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "canvas:new-file"
+        }
+      ]
+    },
+    {
+      "label": "Excali...",
+      "icon": "pen-tool",
+      "hidden": false,
+      "class": "cardnotes-4col",
+      "tooltip": "",
+      "id": "excalidraw-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "obsidian-excalidraw-plugin:excalidraw-autocreate"
+        }
+      ]
+    },
+    {
+      "label": "Mita-Ai",
+      "icon": "search",
+      "hidden": false,
+      "class": "qita-2col",
+      "tooltip": "",
+      "id": "mita-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "open",
+          "link": "https://metaso.cn/"
+        }
+      ]
+    },
+    {
+      "label": "Roam.note",
+      "icon": "brain-circuit",
+      "hidden": false,
+      "class": "qita-2col",
+      "tooltip": "",
+      "id": "manyoubiji-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "random-note"
+        }
+      ]
+    },
+    {
+      "label": "Dailynote",
+      "icon": "sticky-note",
+      "hidden": false,
+      "class": "qita-2col",
+      "tooltip": "",
+      "id": "riji-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "daily-notes"
+        }
+      ]
+    },
+    {
+      "label": "Projects",
+      "icon": "layout-list",
+      "hidden": false,
+      "class": "para-2col",
+      "tooltip": "",
+      "id": "Project-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:87f09f63-b2d4-41e9-802c-fb7844189ee5"
+        }
+      ]
+    },
+    {
+      "label": "Resources",
+      "icon": "waypoints",
+      "hidden": false,
+      "class": "para-2col",
+      "tooltip": "",
+      "id": "Resource-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:762e745f-c470-46a9-8419-35a1518bcf20"
+        }
+      ]
+    },
+    {
+      "label": "Archives",
+      "icon": "archive",
+      "hidden": false,
+      "class": "para-2col",
+      "tooltip": "",
+      "id": "Archive-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:a97bd5a4-5475-4b1e-9e3b-fffdb7fb5831"
+        },
+        {
+          "type": "command",
+          "command": "quickadd:choice:270fac2d-c9aa-4aa0-97b4-0bd95827588e"
+        }
+      ]
+    },
+    {
+      "label": "Inbox...",
+      "icon": "package-open",
+      "hidden": false,
+      "class": "para-2col",
+      "tooltip": "",
+      "id": "inbox-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:e823d54a-f542-401d-bebe-d4d44b432266"
+        }
+      ]
+    },
+    {
+      "label": "Openai3.5",
+      "icon": "bot",
+      "hidden": false,
+      "class": "qita-2col",
+      "tooltip": "",
+      "id": "GPT-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "open",
+          "link": "https://chat.openai.com/"
+        }
+      ]
+    },
+    {
+      "label": "Github.",
+      "icon": "github",
+      "hidden": false,
+      "class": "qita-2col",
+      "tooltip": "",
+      "id": "github-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "open",
+          "link": "https://github.com/"
+        }
+      ]
+    },
+    {
+      "label": "公司卡片",
+      "icon": "building-2",
+      "hidden": false,
+      "class": "connections-2col",
+      "tooltip": "",
+      "id": "gongsikapian-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:10c0f39a-04b3-4b09-abb0-a171597efe3f"
+        }
+      ]
+    },
+    {
+      "label": "部门卡片",
+      "icon": "network",
+      "hidden": false,
+      "class": "connections-2col",
+      "tooltip": "",
+      "id": "bumenkapian-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:0c5ff72e-b7ec-41e6-96a8-84a6b62503f1"
+        }
+      ]
+    },
+    {
+      "label": "Reading..",
+      "icon": "library-big",
+      "hidden": false,
+      "class": "qita-2col",
+      "tooltip": "",
+      "id": "readingnote-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:5a007903-d638-4512-826b-2a252a3270c0"
+        }
+      ]
+    },
+    {
+      "label": "物品卡片",
+      "icon": "package-plus",
+      "hidden": false,
+      "class": "connections-2col",
+      "tooltip": "",
+      "id": "wupinkapian-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:d4a0bed3-f430-487c-a7d9-30a87cf2d496"
+        }
+      ]
+    },
+    {
+      "label": "Meeting",
+      "icon": "projector",
+      "hidden": false,
+      "class": "cardnotes-2col",
+      "tooltip": "",
+      "id": "huiyi-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:7bd824b9-825a-4864-81fb-b1991ac83d8b"
+        }
+      ]
+    },
+    {
+      "label": "Canvas.",
+      "icon": "app-window",
+      "hidden": false,
+      "class": "cardnotes-2col",
+      "tooltip": "",
+      "id": "canvas-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "canvas:new-file"
+        }
+      ]
+    },
+    {
+      "label": "Excali..",
+      "icon": "pen-tool",
+      "hidden": false,
+      "class": "cardnotes-2col",
+      "tooltip": "",
+      "id": "excalidraw-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "obsidian-excalidraw-plugin:excalidraw-autocreate"
+        }
+      ]
+    },
+    {
+      "label": "人物卡片",
+      "icon": "contact",
+      "hidden": false,
+      "class": "connections-2col",
+      "tooltip": "",
+      "id": "renwukapian-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:d638770f-9d79-48aa-8875-450a48ded209"
+        }
+      ]
+    },
+    {
+      "label": "公司卡片",
+      "icon": "building-2",
+      "hidden": false,
+      "class": "connections-3col",
+      "tooltip": "",
+      "id": "gongsikapian-3col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:10c0f39a-04b3-4b09-abb0-a171597efe3f"
+        }
+      ]
+    },
+    {
+      "label": "部门卡片",
+      "icon": "network",
+      "hidden": false,
+      "class": "connections-3col",
+      "tooltip": "",
+      "id": "bumenkapian-3col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:0c5ff72e-b7ec-41e6-96a8-84a6b62503f1"
+        }
+      ]
+    },
+    {
+      "label": "卡片盒笔记",
+      "icon": "activity",
+      "hidden": false,
+      "class": "cardnotes-4col",
+      "tooltip": "",
+      "id": "cardnotes-4col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:d637f68b-3fbb-4905-8c09-607a9d777c4f"
+        }
+      ]
+    },
+    {
+      "label": "卡片盒笔记",
+      "icon": "activity",
+      "hidden": false,
+      "class": "cardnotes-2col",
+      "tooltip": "",
+      "id": "cardnotes-2col",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:d637f68b-3fbb-4905-8c09-607a9d777c4f"
+        }
+      ]
+    },
+    {
+      "label": "主题索引卡",
+      "icon": "album",
+      "hidden": false,
+      "class": "",
+      "tooltip": "在I.P.A.R.A归档文件夹中创建主题索引卡（excalidraw），然后通过“选择主题”建立索引",
+      "id": "cardnotetopic-4col",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:a94335ce-1d73-4bed-9635-01bd70e8a0ce"
+        }
+      ]
+    },
+    {
+      "label": "主题索引卡",
+      "icon": "album",
+      "hidden": false,
+      "class": "cardnotes-2col",
+      "tooltip": "在I.P.A.R.A归档文件夹中创建主题索引卡（excalidraw），然后通过“选择主题”建立索引",
+      "id": "cardnotetopic-2col",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:a94335ce-1d73-4bed-9635-01bd70e8a0ce"
+        }
+      ]
+    },
+    {
+      "label": "创建工作笔记",
+      "icon": "activity",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "worknotes",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "createNote",
+          "folderPath": "Documents/I.P.A.R.A/工作领域",
+          "fileName": "工作笔记",
+          "openNote": true
+        }
+      ]
+    },
+    {
+      "label": "创建学习笔记",
+      "icon": "activity",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "studynotes",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "createNote",
+          "folderPath": "Documents/I.P.A.R.A/学习领域",
+          "fileName": "学习笔记",
+          "openNote": true
+        }
+      ]
+    },
+    {
+      "label": "创建生活笔记",
+      "icon": "activity",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "lifenotes",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "createNote",
+          "folderPath": "Documents/I.P.A.R.A/生活领域",
+          "fileName": "生活笔记",
+          "openNote": true
+        }
+      ]
+    },
+    {
+      "label": "更新模块",
+      "icon": "",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "replacemodule",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-更新模块.md"
+        }
+      ]
+    },
+    {
+      "label": "更新模板",
+      "icon": "",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "replacetemplate",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-更新模板.md"
+        }
+      ]
+    },
+    {
+      "label": "更新使用指南",
+      "icon": "",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "replaceguide",
+      "style": "default",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-更新使用指南.md"
+        }
+      ]
+    },
+    {
+      "label": "新增模块",
+      "icon": "",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "newmodule",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-新增模块.md"
+        }
+      ]
+    },
+    {
+      "label": "新增模板",
+      "icon": "",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "newtemplate",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-新增模板.md"
+        }
+      ]
+    },
+    {
+      "label": "新增使用指南",
+      "icon": "",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "newguide",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-新增使用指南.md"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴工作(归档)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/工作领域/归档”文件夹",
+      "id": "g-g",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-工作领域-归档.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴工作(收集)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/工作领域/收集”文件夹",
+      "id": "g-s",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-工作领域-收集.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴工作(项目)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/工作领域/项目”文件夹",
+      "id": "g-x",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-工作领域-项目.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴工作(资源)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/工作领域/资源”文件夹",
+      "id": "g-z",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-工作领域-资源.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴学习(归档)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/学习领域/归档”文件夹",
+      "id": "x-g",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-学习领域-归档.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴学习(收集)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/学习领域/收集”文件夹",
+      "id": "x-s",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-学习领域-收集.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴学习(项目)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/学习领域/项目”文件夹",
+      "id": "x-x",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-学习领域-项目.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴学习(资源)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/学习领域/资源”文件夹",
+      "id": "x-z",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-学习领域-资源.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴生活(归档)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/生活领域/归档”文件夹",
+      "id": "s-g",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-生活领域-归档.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴生活(收集)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/生活领域/收集”文件夹",
+      "id": "s-s",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-生活领域-收集.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴生活(项目)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/生活领域/项目”文件夹",
+      "id": "s-x",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-生活领域-项目.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "🇹🇴生活(资源)",
+      "icon": "folder",
+      "hidden": false,
+      "class": "",
+      "tooltip": "将当前文档移动至“Documents/I.P.A.R.A/生活领域/资源”文件夹",
+      "id": "s-z",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/移动/移动至-生活领域-资源.md"
+        },
+        {
+          "type": "sleep",
+          "ms": 50
+        },
+        {
+          "type": "command",
+          "command": "dataview:dataview-rebuild-current-view"
+        }
+      ]
+    },
+    {
+      "label": "卡片盒笔记",
+      "icon": "activity",
+      "hidden": false,
+      "class": "cardnotes-2col",
+      "tooltip": "",
+      "id": "cardnotes-2col-2",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:d637f68b-3fbb-4905-8c09-607a9d777c4f"
+        }
+      ]
+    },
+    {
+      "label": "This is a button",
+      "icon": "",
+      "hidden": false,
+      "class": "",
+      "tooltip": "",
+      "id": "mubanxuanze",
+      "style": "default",
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "Assistants/Templater/笔记/康奈尔笔记模板-editor-浅色.md",
+          "folderPath": "Extras",
+          "fileName": "",
+          "openNote": true
+        }
+      ]
+    },
+    {
+      "label": "选择插入模板",
+      "icon": "layout-template",
+      "hidden": false,
+      "class": "",
+      "tooltip": "插入“Assistants/Templater/片段”文件夹中的模板",
+      "id": "ITP",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "templater-obsidian:Assistants/Templater/Temp（用于更新，勿删）/模块化Ob-模板选择器.md"
+        }
+      ]
+    },
+    {
+      "label": "主题索引卡",
+      "icon": "activity",
+      "hidden": false,
+      "class": "cardnotes-2col",
+      "tooltip": "在I.P.A.R.A归档文件夹中创建主题索引卡（excalidraw），然后通过“选择主题”建立索引",
+      "id": "cardnotetopic-2col-2",
+      "style": "plain",
+      "actions": [
+        {
+          "type": "command",
+          "command": "quickadd:choice:a94335ce-1d73-4bed-9635-01bd70e8a0ce"
+        }
+      ]
+    }
+  ],
+  "excludedFolders": []
+}
