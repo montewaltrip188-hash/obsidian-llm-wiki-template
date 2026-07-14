@@ -1,0 +1,9 @@
+{
+  "id": "quick-archive",
+  "name": "Quick Archive",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "右键归档文件到 .archive 文件夹",
+  "author": "Custom",
+  "isDesktopOnly": false
+}

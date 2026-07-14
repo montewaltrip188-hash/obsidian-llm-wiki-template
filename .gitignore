@@ -1,0 +1,29 @@
+# 个人数据兜底（忽略内容，保留 .gitkeep 占位）
+raw/**
+!raw/**/
+!raw/**/.gitkeep
+wiki/**
+!wiki/**/
+!wiki/**/.gitkeep
+inbox/**
+!inbox/**/
+!inbox/**/.gitkeep
+log/**
+!log/**/
+!log/**/.gitkeep
+lint/**
+!lint/**/
+!lint/**/.gitkeep
+.archive/**
+!.archive/**/
+!.archive/**/.gitkeep
+.snapshots/
+output/**
+!output/**/
+!output/.gitkeep
+
+# Obsidian 配置（仅保留自研插件）
+.obsidian/*
+!.obsidian/plugins/
+.obsidian/plugins/*
+!.obsidian/plugins/quick-archive/
