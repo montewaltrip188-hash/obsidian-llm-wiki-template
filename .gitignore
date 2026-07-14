@@ -43,3 +43,8 @@ skills/**
 
 # .claudian/ 个人数据
 .claudian/sessions/
+
+# wiki-hybrid-search 运行时索引（自动重建）
+.state.db
+.wiki_faiss.index
+.wiki_faiss_map.json
