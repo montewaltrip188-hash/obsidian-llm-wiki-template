@@ -1,0 +1,109 @@
+/* dataview */
+.table-view-table > tbody > tr > td {
+    font-size: 12px;
+}
+.table-view-table > thead > tr > th{
+    font-size: 14px;
+}
+
+
+.block-language-dataview{
+    font-size: 17px;
+}
+
+/* callout */
+.callout:not(.admonition).drop-shadow{
+    border:  solid 0.01px;
+}
+
+
+.columnParent, div[data-callout="col"].callout > div.callout-content{
+    border-top:none;
+    border-radius: ;
+}
+.shib-callout-toggle.shib-callout-style-2 .callout.is-collapsible:not(.is-collapsed), .shib-callout-toggle.shib-callout-style-3 .callout.is-collapsible:not(.is-collapsed), body:not(.shib-callout-toggle) .callout.is-collapsible:not(.is-collapsed){
+    padding-bottom: 0;
+}
+.markdown-preview-view img:not([width]), .markdown-rendered img:not([width]){
+    border-radius: 5px;
+}
+.shib-callout-toggle.shib-callout-style-3 .callout .callout-content, body:not(.shib-callout-toggle) .callout .callout-content{
+    border-top: none;
+}
+
+/* ShibaInu主题 */
+.shib-floating-tab-toggle .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header.is-active{
+    border-radius: 5px;
+}
+.theme-dark .dropdown{
+    border-radius: 5px;
+}
+.theme-light .dropdown{
+    border-radius: 5px;
+}
+
+
+body{
+    --img-border-radius:0px
+    
+}
+.status-bar{
+    padding: 0;
+    margin: 0;
+    font-size: ;
+}
+.status-bar-item(
+    line-height:0.5;
+)
+
+
+
+.music-box.Default[data-v-67c78bf7] {
+	background-color: #FFFAF0;
+}
+.columnParent, div[data-callout="col"].callout > div.callout-content{
+	padding:0;
+}
+.theme-dark, .theme-light{
+    --background-modifier-error:#498d6a;
+}
+button.mod-cta{
+    background-color:#c27284
+}
+.shib-callout-toggle.shib-callout-style-3 .callout.is-collapsible:not(.is-collapsed) .callout-content, body:not(.shib-callout-toggle) .callout.is-collapsible:not(.is-collapsed) .callout-content{
+    display: flex;
+    border-top:none;
+}
+
+
+.admonition.no-title .admonition-content{
+    border-top: solid 0px;
+
+}
+
+
+/* 标题栏颜色 */
+.theme-light, .theme-light.default-light-theme{
+    --exterior: 234,231,226;
+}
+.theme-dark.pure-dark{
+    --exterior: 105,105,105;
+    --overlay2: 225,225,225;
+    --surface0: 105,105,105;
+}
+.mod-linux .titlebar-button, .mod-windows .titlebar-button{
+    background: var(--background-secondary-alt);
+}
+
+/* KISS复盘样式 */
+.columnChild, div[data-callout="col"].callout > div.callout-content > *{
+    margin-top: 0;
+}
+.table-view-table ul, .table-view-table ol{
+    text-align: left;
+}
+
+/* 高亮 */
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight{
+    border-radius: var(--code-radius);
+}

@@ -5,6 +5,7 @@ raw/**
 wiki/**
 !wiki/**/
 !wiki/**/.gitkeep
+!wiki/index.md
 inbox/**
 !inbox/**/
 !inbox/**/.gitkeep
@@ -21,9 +22,24 @@ lint/**
 output/**
 !output/**/
 !output/.gitkeep
+skills/**
+!skills/**/
+!skills/**/.gitkeep
 
-# Obsidian 配置（仅保留自研插件）
-.obsidian/*
-!.obsidian/plugins/
+# .obsidian/ 个人数据
+.obsidian/workspace.json
+.obsidian/workspace-*.json
+.obsidian/workspaces.json
+.obsidian/bookmarks.json
+.obsidian/graph.json
+.obsidian/command-palette.json
+.obsidian/global-search.json
+.obsidian/query.json
+.obsidian/surfing-bookmark.json
+
+# .obsidian/plugins/ 只保留 quick-archive
 .obsidian/plugins/*
 !.obsidian/plugins/quick-archive/
+
+# .claudian/ 个人数据
+.claudian/sessions/

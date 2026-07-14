@@ -1,0 +1,53 @@
+.markdown-source-view.mod-cm6 .callout{
+    background-color:rgb(236 239 244 / 0%);
+    margin: 10px;
+}
+body{
+    --img-border-radius:5px
+}
+
+
+/* 其他主题 */
+.markdown-source-view.mod-cm6 .cm-link .cm-underline, .markdown-source-view.mod-cm6 .cm-url .cm-underline{
+    color:rgb(45, 122, 174) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-underline{
+    color:rgb(45, 129, 174) !important;
+}
+
+.anp-colorful-frame.anuppuccin-accent-toggle.anp-colorful-frame .sidebar-toggle-button, .anp-colorful-frame.anp-colorful-frame.anp-colorful-frame.anp-colorful-frame .sidebar-toggle-button{
+    background: rgba(var(--ctp-crust), 0.3) !important;
+}
+.anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-close-button, .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked).mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon{
+    background: var(--background-primary) ;
+}
+.anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner, .anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-close-button, .anp-alternate-tab-toggle .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-icon{
+    background: 
+}
+.cm-s-obsidian span.cm-link{
+    color:var(--text-normal);
+}
+.style-settings-heading:is([data-id=anuppuccin-theme-settings], [data-id=anuppuccin-theme-settings-extended]) .setting-item-name{
+    color:var(--text-normal);
+}
+
+.external-link, .external-link:hover{
+    color:rgb(var(--ctp-sky));
+}
+
+.is-focused:not(.anp-mini-tab-toggle.anp-colorful-frame) .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title{
+    color:rgb(var(--ctp-sky));
+}
+.callout:not([data-callout-metadata*=revert]):not(.is-collapsible) > .callout-title .callout-title-inner{
+    color: #cba21c;
+}
+
+
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting){
+    background: rgba(96, 98, 96, 0.2)
+}
+.cm-s-obsidian span.cm-hmd-internal-link{
+    color:rgb(148, 146, 78) ;
+}
+

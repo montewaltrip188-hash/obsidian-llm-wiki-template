@@ -1,0 +1,22 @@
+.markdown-source-view.mod-cm6 .callout{
+  margin-top: 20px;
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer>div, .markdown-source-view.mod-cm6.is-readable-line-width .cm-contentContainer.cm-contentContainer>.cm-content>div, .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer>.embedded-backlinks, .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer>.inline-title, .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer>.metadata-container,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer div:has(>.cm-html-embed), .markdown-preview-view.is-readable-line-width .markdown-preview-sizer>div:has(>iframe), .markdown-source-view.mod-cm6.is-readable-line-width .cm-contentContainer.cm-contentContainer>.cm-content div:has(>.cm-html-embed), .markdown-source-view.mod-cm6.is-readable-line-width .cm-contentContainer.cm-contentContainer>.cm-content>div:has(>iframe){
+  width: 48rem;
+}
+h1, .markdown-rendered h1{
+  padding-top: 0px;
+  margin-top: 20px;
+}
+button.mod-warning{
+  color: var(--tx1);
+}
+.callout{
+  padding: 6px;
+}
+.callouts-outlined .callout .callout-title{
+  margin: 10px;
+  margin-bottom: 0px;
+}

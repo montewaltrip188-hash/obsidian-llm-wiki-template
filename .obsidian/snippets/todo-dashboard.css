@@ -1,0 +1,203 @@
+/* ============================================
+   Todo Dashboard — 高级任务面板样式
+   cssclass: todo-dashboard
+   ============================================ */
+
+/* === 全局：Dashboard 容器 === */
+.todo-dashboard .markdown-preview-view {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* === H1 标题居中 + 渐变下划线 === */
+.todo-dashboard h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.4em;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, transparent, var(--text-accent), transparent) 1;
+}
+
+/* === 分隔线美化 === */
+.todo-dashboard hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--background-modifier-border) 20%, var(--background-modifier-border) 80%, transparent 100%);
+    margin: 1.5em 0;
+}
+
+/* === H2 段落标题：左侧彩色竖条 === */
+.todo-dashboard h2 {
+    font-size: 1.3em;
+    padding-left: 12px;
+    border-left: 4px solid var(--text-accent);
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+/* === Callout 任务区块通用 === */
+.todo-dashboard .callout[data-callout-metadata*="todo-section"] {
+    border-radius: 12px;
+    border-left-width: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease;
+    margin-bottom: 0.8em;
+}
+
+.todo-dashboard .callout[data-callout-metadata*="todo-section"]:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* === 输入区块 === */
+.todo-dashboard .callout[data-callout-metadata*="todo-input"] {
+    border-radius: 12px;
+    border-left-width: 4px;
+    background: var(--background-secondary);
+}
+
+/* === Tasks 插件列表美化 === */
+.todo-dashboard .tasks-list-text {
+    font-size: 0.95em;
+}
+
+.todo-dashboard .task-list-item {
+    padding: 4px 6px;
+    margin: 2px 0;
+    border-radius: 6px;
+    transition: background 0.15s ease;
+}
+
+.todo-dashboard .task-list-item:hover {
+    background: var(--background-modifier-hover);
+}
+
+/* === checkbox 美化 === */
+.todo-dashboard .task-list-item-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.todo-dashboard .task-list-item-checkbox:checked {
+    background-color: var(--interactive-accent);
+}
+
+/* === 完成的任务：淡化 + 删除线 === */
+.todo-dashboard .task-list-item[data-task="x"] {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* === 进行中的任务：左侧蓝色高亮 === */
+.todo-dashboard .task-list-item[data-task="/"] {
+    border-left: 3px solid #4ea1d3;
+    padding-left: 10px;
+    background: rgba(78, 161, 211, 0.06);
+}
+
+/* === 取消的任务 === */
+.todo-dashboard .task-list-item[data-task="-"] {
+    opacity: 0.35;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+/* === Dataview 表格美化 === */
+.todo-dashboard .dataview.table-view-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.todo-dashboard .dataview.table-view-table th {
+    background: var(--background-secondary-alt);
+    font-weight: 600;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 10px 12px;
+}
+
+.todo-dashboard .dataview.table-view-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.todo-dashboard .dataview.table-view-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* === 优先级多列布局微调 === */
+.todo-dashboard .callout[data-callout-metadata*="clean"] {
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+/* === 底部引言样式 === */
+.todo-dashboard .callout[data-callout="quote"][data-callout-metadata*="clean"] {
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin-top: 2em;
+}
+
+/* === 空状态提示 (Tasks 无结果时) === */
+.todo-dashboard .tasks-count {
+    font-size: 0.8em;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+/* === 快速添加区 H3 标题标签化 === */
+.todo-dashboard .callout[data-callout-metadata*="todo-input"] ~ h3,
+.todo-dashboard h3 {
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin-right: 4px;
+    margin-top: 0.8em;
+}
+
+/* 不同分类的颜色 */
+.todo-dashboard h3:nth-of-type(4n+1) {
+    background: rgba(235, 87, 87, 0.12);
+    color: #eb5757;
+}
+
+.todo-dashboard h3:nth-of-type(4n+2) {
+    background: rgba(47, 128, 237, 0.12);
+    color: #2f80ed;
+}
+
+.todo-dashboard h3:nth-of-type(4n+3) {
+    background: rgba(39, 174, 96, 0.12);
+    color: #27ae60;
+}
+
+.todo-dashboard h3:nth-of-type(4n) {
+    background: rgba(155, 89, 182, 0.12);
+    color: #9b59b6;
+}
+
+/* === 滚动条美化 === */
+.todo-dashboard ::-webkit-scrollbar {
+    width: 6px;
+}
+
+.todo-dashboard ::-webkit-scrollbar-thumb {
+    background: var(--background-modifier-border);
+    border-radius: 3px;
+}
+
+.todo-dashboard ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}

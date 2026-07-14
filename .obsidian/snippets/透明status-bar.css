@@ -1,0 +1,54 @@
+
+
+.status-bar,
+.is-translucent .status-bar {
+	background: transparent;
+  font-size: 12px;
+  position: fixed;
+  left: 110;
+  bottom: 1%;
+  backdrop-filter: blur(15px);
+  border-top: 1px solid var(--shade-plus-darker);
+  border-left: 1px solid var(--shade-plus-darker);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  line-height: 1;
+  padding: 8px 12px 8px 0;
+  color: var(--text-muted);
+  max-height: unset;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  margin-left: 300px;
+	opacity: 0.01;
+	transition: .2s;
+}
+
+.status-bar:hover {
+	opacity: 1;
+	transition: .2s;
+}
+
+.status-bar-item {
+  padding: 0 0 0 10px;
+}
+
+.status-bar-item-segment {
+  margin-right: 0; 
+}
+
+
+.status-bar-item-segment:last-child {
+	display: ;
+}
+
+.status-bar-item-icon {
+	display: block;
+}
+
+.status-bar-item-icon svg {
+	display: block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}

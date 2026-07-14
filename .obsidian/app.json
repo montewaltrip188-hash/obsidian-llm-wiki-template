@@ -1,0 +1,8 @@
+{
+  "userIgnoreFilters": [
+    "**/sortspec*"
+  ],
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "使用指南/attachments",
+  "promptDelete": false
+}

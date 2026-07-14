@@ -1,0 +1,105 @@
+{
+  "chatViewPlacement": "right-sidebar",
+  "customContextLimits": {},
+  "customModelAliases": {},
+  "deferMathRenderingDuringStreaming": true,
+  "effortLevel": "high",
+  "enableAutoScroll": true,
+  "enableAutoTitleGeneration": true,
+  "envSnippets": [],
+  "excludedTags": [],
+  "expandFileEditsByDefault": false,
+  "hiddenProviderCommands": {},
+  "keyboardNavigation": {
+    "focusInputKey": "i",
+    "scrollDownKey": "s",
+    "scrollUpKey": "w"
+  },
+  "lastCustomModel": "",
+  "locale": "zh-CN",
+  "maxTabs": 3,
+  "mediaFolder": "",
+  "model": "opus",
+  "permissionMode": "yolo",
+  "persistentExternalContextPaths": [],
+  "providerConfigs": {
+    "claude": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "customModels": "",
+      "enableBangBash": false,
+      "enableChrome": false,
+      "enableOpus1M": false,
+      "enableSonnet1M": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "lastModel": "opus",
+      "loadUserSettings": true,
+      "safeMode": "acceptEdits"
+    },
+    "codex": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "customModels": "",
+      "enabled": true,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "installationMethodsByHost": {},
+      "reasoningSummary": "detailed",
+      "safeMode": "workspace-write",
+      "wslDistroOverridesByHost": {}
+    },
+    "opencode": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredThinkingByModel": {},
+      "selectedMode": "",
+      "thinkingOptionsByModel": {},
+      "visibleModels": []
+    },
+    "pi": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "discoveredModels": [],
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredThinkingByModel": {},
+      "toolMode": "all",
+      "visibleModels": []
+    }
+  },
+  "requireCommandOrControlEnterToSend": false,
+  "savedProviderEffort": {
+    "claude": "high",
+    "codex": "xhigh"
+  },
+  "savedProviderModel": {
+    "claude": "opus",
+    "codex": "gpt-5.5"
+  },
+  "savedProviderPermissionMode": {
+    "claude": "yolo",
+    "codex": "yolo"
+  },
+  "savedProviderServiceTier": {
+    "codex": "fast"
+  },
+  "savedProviderThinkingBudget": {
+    "claude": "medium",
+    "codex": "medium"
+  },
+  "serviceTier": "default",
+  "settingsProvider": "claude",
+  "sharedEnvironmentVariables": "",
+  "systemPrompt": "",
+  "tabBarPosition": "input",
+  "thinkingBudget": "medium",
+  "titleGenerationModel": "",
+  "userName": ""
+}
