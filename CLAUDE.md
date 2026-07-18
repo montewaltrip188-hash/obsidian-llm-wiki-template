@@ -89,6 +89,7 @@ vault/
 | 「存下来」/「帮我写一份方案/报告」                  | 3. Output | `output` |
 | 「lint」/「健康检查」/「小检查」/「大检查」           | 4. Lint   | `lint`   |
 | 手动小改（补 wikilink、改 frontmatter、调索引等） | 无专属流程，直接改 | `update` |
+| 「同步」/「sync」/「push到产品仓库」           | 6. Sync   | -        |
 | 其它对话 +「记一下」                         | 5. Daily  | `daily`  |
 
 ### 1. Ingest（摄入知识）
@@ -156,6 +157,10 @@ Query 的认知副产品零成本回收到 wiki，让知识自动 compound。先
 不属于以上任何一种流程的对话——改配置、查信息、讨论想法、工具调研等——直接响应即可，不强制走任何流程。
 
 对话结束时，如用户说"记一下"，将本次对话中的关键操作以 `daily` 类型记录到 `log/` 当天的日志中。
+
+### 6. Sync（同步到产品仓库）
+
+完整流程见 [[schema/git/git-principles.md]]。核心步骤：运行 `schema/sync-to-product.sh` -> 审核 `git status` -> commit -> push -> **写 gitlog**（`schema/git/gitlog/YYYY-MM/YYYY-MM-DD.md`，push 成功后自动执行，无需用户提示）。
 
 
 
