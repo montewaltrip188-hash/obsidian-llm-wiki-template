@@ -1,6 +1,19 @@
 {
   "userIgnoreFilters": [
-    "**/sortspec*"
+    "**/sortspec*",
+    "raw/",
+    "inbox/",
+    "lint/",
+    "log/",
+    "output/",
+    "schema/",
+    "_archive/",
+    "使用指南/",
+    "index",
+    "skills/",
+    "CLAUDE",
+    "AGENTS",
+    "sortspec"
   ],
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "使用指南/attachments",

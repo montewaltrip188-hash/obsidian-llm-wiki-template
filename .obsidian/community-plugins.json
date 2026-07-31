@@ -1,10 +1,11 @@
 [
-  "claudian",
-  "obsidian42-brat",
+  "realclaudian",
   "dataview",
   "obsidian-image-layouts",
   "image-converter",
   "knowledge-workbench",
   "lean-terminal",
-  "quick-archive"
+  "quick-archive",
+  "editing-toolbar",
+  "obsidian42-brat"
 ]
