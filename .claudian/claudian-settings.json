@@ -40,7 +40,7 @@
     },
     "codex": {
       "catalogFingerprint": "1:8eb39c3b57ba651855c59d1e65f0e4046e6b542709c9d8651390cb57ca4f1d4d",
-      "catalogTimestamp": 1785479538150,
+      "catalogTimestamp": 1787215672989,
       "cliPath": "",
       "cliPathsByHost": {},
       "customModels": "",
@@ -253,6 +253,36 @@
           ],
           "isDefault": false,
           "model": "gpt-5.4-mini",
+          "serviceTiers": [],
+          "supportedReasoningEfforts": [
+            {
+              "description": "Fast responses with lighter reasoning",
+              "value": "low"
+            },
+            {
+              "description": "Balances speed and reasoning depth for everyday tasks",
+              "value": "medium"
+            },
+            {
+              "description": "Greater reasoning depth for complex problems",
+              "value": "high"
+            },
+            {
+              "description": "Extra high reasoning depth for complex problems",
+              "value": "xhigh"
+            }
+          ]
+        },
+        {
+          "defaultReasoningEffort": "high",
+          "defaultServiceTier": null,
+          "description": "Ultra-fast coding model.",
+          "displayName": "GPT-5.3-Codex-Spark",
+          "inputModalities": [
+            "text"
+          ],
+          "isDefault": false,
+          "model": "gpt-5.3-codex-spark",
           "serviceTiers": [],
           "supportedReasoningEfforts": [
             {

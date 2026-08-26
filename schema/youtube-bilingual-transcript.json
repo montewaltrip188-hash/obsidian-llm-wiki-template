@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "transcript_root": "raw/13-YouTube",
+  "learning_root": "inbox/learning/youtube",
+  "caption_asset_root": "raw/assets/youtube",
+  "channel_directory": {
+    "numbered": true,
+    "minimum_digits": 2,
+    "separator": "-"
+  }
+}

@@ -2,7 +2,7 @@
 title: "页面格式模板"
 type: reference
 created: 2026-06-06
-updated: 2026-07-28
+updated: 2026-08-18
 tags:
   - wiki/meta
 ---
@@ -31,6 +31,7 @@ tags:
 | author | 可选 | — | — | — |
 | entity_type | — | ✅ | — | — |
 | confidence | — | 可选 | — | — |
+| repo | — | 可选（工具类必填） | — | — |
 | subjects | — | — | — | ✅ |
 
 ---
@@ -68,6 +69,7 @@ title: "实体名称"
 type: entity
 entity_type: person | organization | tool | project
 source: "[[raw/原始文件名.md]]"
+repo: "https://github.com/owner/name"   # 工具类（tool/project）必填
 domain:
   - 领域名
 created: YYYY-MM-DD
@@ -83,6 +85,10 @@ tags:
 confidence: 1.0    # 置信度，只在 entity 页面可选。标在信源（人/组织）上，不标在每条信息上。
                     # 范围 0.0-1.0（实际 0.7-1.0，低质量信源不入库）
                     # 创建时 Claude Code 联网搜索 → 给初始分 → 询问用户确认
+
+repo: "https://github.com/owner/name"    # GitHub 仓库地址。工具类实体（entity_type: tool/project/工具）必填，
+                                         # 闭源无官方仓库的工具（如 Obsidian）留空并在正文注明闭源。
+                                         # source 字段不放 GitHub URL（由 repo 接管），保持 source 的 raw 溯源原义。
 ```
 
 置信度参考（分级核心维度：**是否从业** + **级别**。从业 = 在 AI 公司任职 / sota agent 或知名开源项目作者）：
@@ -318,4 +324,4 @@ created: YYYY-MM-DD
 
 ### 双向链接规则
 
-如果 A 引用了 B，B 的关联页面章节也应引用 A，确保双向连通。
+如果 A 在 `## 关联页面` 章节列出 B，B 的关联页面章节也应引用 A，确保关系网络双向连通。正文内联提及用于解释上下文，不强制机械反链；frontmatter 的 `source` / `subjects` 与示例代码也不纳入双向性硬检查。
