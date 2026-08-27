@@ -2,7 +2,7 @@
 title: "页面格式模板"
 type: reference
 created: 2026-06-06
-updated: 2026-08-18
+updated: 2026-08-27
 tags:
   - wiki/meta
 ---
@@ -11,9 +11,9 @@ tags:
 
 > 所有 wiki 和 output 页面的 frontmatter 与正文结构规范。
 
-**通用字段 `source`（所有 wiki 页面必填）：** 指向原始素材文件 `[[raw/文件名.md]]`。多个来源用列表格式。非 raw 文件来源（如对话产生）填来源说明。
+**通用字段 `source`（所有 wiki 内容页必填）：** 适用于 source、entity、concept、comparison，指向原始素材文件 `[[raw/文件名.md]]`。多个来源用列表格式。非 raw 文件来源（如对话产生）填来源说明。`index` 和 `domain-index` 是聚合索引页，不要求 `source`。
 
-**通用字段 `domain`（所有 wiki 页面必填）：** YAML 列表，领域路径用斜杠分隔层级。如 `domain: [编程/Python, AI, 思维工具]`。无斜杠即一级领域。最多 4 个领域路径。子领域展开规则见 [[schema/domain-rules.md]]，当前领域清单见 [[wiki/index.md]]。
+**通用字段 `domain`（所有 wiki 内容页与 domain-index 必填）：** 内容页使用 YAML 列表，领域路径用斜杠分隔层级，如 `domain: [编程/Python, AI, 思维工具]`；domain-index 按下方索引模板使用单一路径。根聚合页 `wiki/index.md` 不要求 `domain`。无斜杠即一级领域，内容页最多 4 个领域路径。子领域展开规则见 [[schema/domain-rules.md]]，当前领域清单见 [[wiki/index.md]]。
 
 ---
 
@@ -33,6 +33,27 @@ tags:
 | confidence | — | 可选 | — | — |
 | repo | — | 可选（工具类必填） | — | — |
 | subjects | — | — | — | ✅ |
+
+### 字段兼容与扩展规则
+
+上表定义各页面类型的核心字段，不是禁止扩展字段的封闭白名单。核心必填字段缺失属于 Lint 错误；已登记的扩展字段允许保留，不得仅因其未列入核心字段表而删除。
+
+现有兼容扩展字段：
+
+| 字段 | 适用页面 | 用途 |
+|---|---|---|
+| aliases | concept / entity | 页面别名 |
+| status | concept | 既有概念页的内容状态 |
+| origin | concept | 既有页面的形成来源 |
+| roleLabel | 客户类 entity | 当前角色描述 |
+| currentWorkScenarios | 客户类 entity | 当前工作场景 |
+| aiGoals | 客户类 entity | AI 使用目标 |
+| activeProjects | 客户类 entity | 当前项目 |
+| toolStack | 客户类 entity | 当前工具栈 |
+| advisorNotes | 客户类 entity | 服务与判断边界 |
+| priorityTopics | 客户类 entity | 优先议题 |
+
+新增其他扩展字段前，必须先在本节登记名称、适用页面和语义；同一含义不得重复创建不同字段。Lint 对未登记字段先报告为“待确认扩展”，不得自动删除。
 
 ---
 
@@ -67,7 +88,7 @@ tags:
 ---
 title: "实体名称"
 type: entity
-entity_type: person | organization | tool | project
+entity_type: person | organization | tool | project  # 兼容既有中文值：人物 | 组织 | 工具 | 项目
 source: "[[raw/原始文件名.md]]"
 repo: "https://github.com/owner/name"   # 工具类（tool/project）必填
 domain:
@@ -78,6 +99,8 @@ tags:
   - wiki/entity
 ---
 ```
+
+**entity_type 兼容规则：** `person/人物`、`organization/组织`、`tool/工具`、`project/项目` 分别视为同一类型。现有页面保留原值；新页面优先使用英文规范值。Lint 和批量解析必须先按此映射归一化，不得把中文值报为错误，也不得为统一格式批量改写现有页面。
 
 **可选字段：**
 
@@ -300,6 +323,8 @@ created: YYYY-MM-DD
 
 页面间关系不用 frontmatter 字段，而是在正文末尾的 `## 关联页面` 章节用 wikilink + 文字描述：
 
+`memory_layer` 和 Frontmatter 键 `relates_to` 不属于现行字段模型；不得要求或自动补写。正文中的 `relates_to` 仍是合法关系标签，与已废弃的同名 Frontmatter 键不是一回事。
+
 ```markdown
 ## 关联页面
 
@@ -308,7 +333,7 @@ created: YYYY-MM-DD
 - [[wiki/sources/某反对观点.md|某反对观点]] — ⚠️ contradicts（与本文观点矛盾）
 ```
 
-**关联页面只放 wiki 内部页面**（entity / concept / comparison / source 等），不放 `[[raw/...]]`。raw 是外部原始素材，不参与 wiki 关系网络，也无法完成双向链接（raw 无「关联页面」章节）。raw 的溯源走两条路：① frontmatter `source` 字段（每页必填，已挂靠 raw）；② 正文中具体论点/数据处 inline 链接 `[[raw/...]]`。concept 页表达「本页来源」时链 source 页（raw 的 wiki 化代理，能参与双向链接），不直接链 raw。
+**关联页面只放 wiki 内部页面**（entity / concept / comparison / source 等），不放 `[[raw/...]]`。raw 是外部原始素材，不参与 wiki 关系网络，也无法完成双向链接（raw 无「关联页面」章节）。raw 的溯源走两条路：① frontmatter `source` 字段（每个 Wiki 内容页必填，已挂靠 raw）；② 正文中具体论点/数据处 inline 链接 `[[raw/...]]`。concept 页表达「本页来源」时链 source 页（raw 的 wiki 化代理，能参与双向链接），不直接链 raw。
 
 ### 7 种关系标签
 

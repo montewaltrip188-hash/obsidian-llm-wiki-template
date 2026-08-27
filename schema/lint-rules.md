@@ -4,7 +4,7 @@ type: reference
 domain:
   - 知识库管理
 created: 2026-07-07
-updated: 2026-08-18
+updated: 2026-08-27
 tags:
   - wiki/lint
 ---
@@ -15,7 +15,7 @@ tags:
 
 ## 小检查（轻量，扫结构不读正文，可高频运行）
 
-- **Frontmatter 完整性**：必填字段是否缺失、type/domain 值是否合法、日期格式和逻辑是否正确
+- **Frontmatter 完整性**：以 [[schema/templates.md]] 为唯一字段模型，检查各页面类型的核心必填字段、type/domain 值、日期格式与逻辑；已登记扩展字段允许保留，未登记字段只报告为“待确认扩展”，不得自动删除
 - **交叉引用双向性**：只把页面 `## 关联页面` 章节中的 wiki 关系链接作为双向性硬约束；A 的关联页面列出 B 时，B 的关联页面也应列出 A。正文内联提及、frontmatter 的 `source` / `subjects` 和示例代码中的 wikilink 不要求机械反链，可作为补链提示但不得计入硬错误。对 raw 的引用始终是单向溯源，不检查反向
 - **死链检测**：wikilink 指向的页面是否存在
 - **index.md 一致性**：与实际文件是否匹配（多收录/漏收录）
@@ -37,9 +37,9 @@ tags:
 | FM 字段解析失败 | 开头用了 `***` 而非 `---` | 把 `***\n\n` 替换为 `---\n\n` |
 | 双层关闭符 | 插入 `---` 时重复 | 删除多余的 `---\n---` 行 |
 | V2 字段跑到正文里 | 关闭符 `---` 插入位置不对 | 确认 `updated:` 后紧跟 `---\n` |
-| relates_to 空列表 | YAML 空值未正确填写 | 展开为多行列表格式 |
-| relates_to 括号不闭合 | `[tag, [[页面]]` 少写 `]` | 展开为多行格式 |
 | YAML 列表某行缺 `-` | 前缀横线被遗漏 | 检查每行是否以 `- ` 开头 |
+
+> 历史页面若出现模板未定义的关系字段，只作为迁移提示报告，不得将其视为必填字段或自动补写；关系网络始终以正文 `## 关联页面` 为准。
 
 ## 假阳性陷阱
 
@@ -50,21 +50,6 @@ tags:
 正确做法：先提取 frontmatter 区域，在结束后查找 `---` 时，检查前面几行是否在表格上下文（包含 `|`）。
 
 大多数"双层关闭符"警报实际上是 Markdown 水平线，无需修复。
-
-### relates_to 空列表检查
-
-```python
-# ❌ 错误方式：只检查字段存在（有内容的列表也会触发）
-if 'relates_to:' in fm_text:
-    issues.append(f"[空relates_to] {rel}")
-
-# ✅ 正确方式：检查列表是否有实际条目
-m = re.search(r'^relates_to:\s*\n((?:\s*-.*\n)*)', content, re.MULTILINE)
-if m:
-    items = m.group(1).strip()
-    if not items:
-        issues.append(f"[空relates_to] {rel}")
-```
 
 ### 空壳页面检查
 
@@ -83,8 +68,6 @@ def count_lines(content):
             count += 1
     return count
 ```
-
-实测经验：cron 报告的"120个页面缺少 relates_to"是误判，实际只有 28 个。
 
 ## 修复优先级
 

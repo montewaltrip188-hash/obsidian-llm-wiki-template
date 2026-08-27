@@ -26,7 +26,7 @@ skills/**
 !skills/**/
 !skills/**/.gitkeep
 
-# .obsidian/ 个人数据
+# .obsidian/ 个人数据与运行时状态
 .obsidian/workspace.json
 .obsidian/workspace-*.json
 .obsidian/workspaces.json
@@ -36,15 +36,26 @@ skills/**
 .obsidian/global-search.json
 .obsidian/query.json
 .obsidian/surfing-bookmark.json
-
-# .obsidian/plugins/ 排除 node_modules 和冲突文件
-.obsidian/plugins/**/node_modules/
-.obsidian/plugins/**/data-冲突-*
+.obsidian/**/cache/
+.obsidian/**/node_modules/
+.obsidian/**/sessions/
+.obsidian/**/cursor-positions.json
+.obsidian/**/data-冲突-*
+.obsidian/**/*.db
+.obsidian/**/*.sqlite
+.obsidian/**/*-wal
+.obsidian/**/*-shm
+.obsidian/**/*-journal
+.obsidian/**/*.tmp
+.obsidian/**/*.bak
+.obsidian/**/*.log
 
 # .claudian/ 个人数据
 .claudian/sessions/
 
 # wiki-hybrid-search 运行时索引（自动重建）
 .state.db
+.state.db-wal
+.state.db-shm
 .wiki_faiss.index
 .wiki_faiss_map.json

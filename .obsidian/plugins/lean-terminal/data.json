@@ -1,77 +1,77 @@
 {
-  "shellPath": "",
-  "shellPathWin": "",
-  "shellPathMac": "",
-  "shellPathLinux": "",
-  "startupCommand": "",
-  "fontSize": 14,
-  "fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-  "lineHeight": 1,
-  "theme": "auto",
   "backgroundColor": "",
+  "claudeRegistryPath": "claude-sessions.md",
+  "claudeSessionsDir": "",
+  "claudeSessionsMax": 25,
+  "copyOnSelect": false,
   "cursorBlink": true,
   "cursorStyle": "block",
-  "copyOnSelect": false,
-  "scrollback": 5000,
-  "ribbonIcon": "terminal",
   "defaultLocation": "bottom",
-  "notifyOnCompletion": false,
+  "enableClaudeIntegration": false,
+  "fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "fontSize": 14,
+  "lineHeight": 1,
   "notificationSound": "beep",
   "notificationVolume": 50,
-  "searchShortcut": "Ctrl+Alt+F",
+  "notifyOnCompletion": false,
   "persistBuffer": true,
-  "recentSessionsMax": 10,
   "recentSessions": [],
-  "enableClaudeIntegration": false,
-  "claudeSessionsDir": "",
-  "claudeRegistryPath": "claude-sessions.md",
-  "claudeSessionsMax": 25,
+  "recentSessionsMax": 10,
+  "ribbonIcon": "terminal",
+  "scrollback": 5000,
+  "searchShortcut": "Ctrl+Alt+F",
+  "shellPath": "",
+  "shellPathLinux": "",
+  "shellPathMac": "",
+  "shellPathWin": "",
+  "startupCommand": "",
+  "tabBarPosition": "top",
   "tabColorTintsBackground": true,
   "tabColors": [
     {
+      "builtin": true,
       "name": "None",
-      "value": "",
       "tintStrength": 0,
-      "builtin": true
+      "value": ""
     },
     {
+      "builtin": true,
       "name": "Vermilion",
-      "value": "#FC3634",
       "tintStrength": 12,
-      "builtin": true
+      "value": "#FC3634"
     },
     {
+      "builtin": true,
       "name": "Sky Blue",
-      "value": "#25D0F7",
       "tintStrength": 12,
-      "builtin": true
+      "value": "#25D0F7"
     },
     {
+      "builtin": true,
       "name": "Gold",
-      "value": "#FFD700",
       "tintStrength": 12,
-      "builtin": true
+      "value": "#FFD700"
     },
     {
+      "builtin": true,
       "name": "Mint",
-      "value": "#18BC9C",
       "tintStrength": 12,
-      "builtin": true
+      "value": "#18BC9C"
     },
     {
+      "builtin": true,
       "name": "Azure",
-      "value": "#007BFF",
       "tintStrength": 12,
-      "builtin": true
+      "value": "#007BFF"
     },
     {
+      "builtin": true,
       "name": "Purple",
-      "value": "#A991D4",
       "tintStrength": 12,
-      "builtin": true
+      "value": "#A991D4"
     }
   ],
-  "tabBarPosition": "top",
+  "theme": "auto",
   "wikiLinkAutocomplete": false,
   "wikiLinkInsertMode": "wikilink"
 }
