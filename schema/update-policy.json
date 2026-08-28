@@ -1,0 +1,140 @@
+{
+  "policy_format": 1,
+  "product_id": "obsidian-llm-wiki-template",
+  "default": {
+    "ownership": "unmanaged",
+    "action": "preserve"
+  },
+  "excluded_roots": [
+    ".archive/",
+    ".claude/",
+    ".secrets/",
+    ".snapshots/",
+    ".tmp/",
+    ".trash/",
+    ".wechat-archive/",
+    "inbox/",
+    "lint/",
+    "log/",
+    "output/",
+    "raw/",
+    "skills/",
+    "wiki/"
+  ],
+  "rules": [
+    {
+      "id": "first-install-seeds",
+      "paths": [
+        ".gitignore",
+        "wiki/index.md"
+      ],
+      "globs": [
+        "*.gitkeep",
+        "*/*.gitkeep",
+        "*/*/.gitkeep",
+        "*/*/*/.gitkeep"
+      ],
+      "ownership": "seed_once",
+      "action": "preserve"
+    },
+    {
+      "id": "customer-business-assets",
+      "prefixes": [
+        "inbox/",
+        "lint/",
+        "log/",
+        "output/",
+        "raw/",
+        "skills/",
+        "wiki/"
+      ],
+      "ownership": "customer_business",
+      "action": "preserve"
+    },
+    {
+      "id": "customer-runtime-config",
+      "prefixes": [
+        ".claudian/"
+      ],
+      "ownership": "customer_config",
+      "action": "preserve"
+    },
+    {
+      "id": "rebuildable-derived-state",
+      "paths": [
+        ".state.db",
+        ".wiki_faiss.index",
+        ".wiki_faiss_map.json"
+      ],
+      "globs": [
+        ".state.db-*",
+        ".wiki_faiss*"
+      ],
+      "ownership": "derived_rebuildable",
+      "action": "rebuild_by_fingerprint"
+    },
+    {
+      "id": "private-and-local-temporary-data",
+      "prefixes": [
+        ".archive/",
+        ".claude/",
+        ".secrets/",
+        ".snapshots/",
+        ".tmp/",
+        ".trash/",
+        ".wechat-archive/"
+      ],
+      "globs": [
+        ".tmp*/**"
+      ],
+      "ownership": "local_private",
+      "action": "exclude"
+    },
+    {
+      "id": "plugin-customer-config",
+      "globs": [
+        ".obsidian/plugins/*/data.json",
+        ".obsidian/plugins/*/user-rules.json"
+      ],
+      "ownership": "customer_config",
+      "action": "preserve"
+    },
+    {
+      "id": "product-plugin-programs",
+      "globs": [
+        ".obsidian/plugins/*/main.js",
+        ".obsidian/plugins/*/manifest.json",
+        ".obsidian/plugins/*/styles.css",
+        ".obsidian/themes/*/manifest.json",
+        ".obsidian/themes/*/theme.css",
+        ".obsidian/snippets/*.css"
+      ],
+      "ownership": "product_replace",
+      "action": "three_way"
+    },
+    {
+      "id": "obsidian-customer-settings",
+      "prefixes": [
+        ".obsidian/"
+      ],
+      "ownership": "customer_config",
+      "action": "preserve"
+    },
+    {
+      "id": "product-governance",
+      "paths": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "schema/daily-review-rules.md",
+        "schema/domain-rules.md",
+        "schema/lint-rules.md",
+        "schema/runtime-contract.json",
+        "schema/templates.md",
+        "schema/update-policy.json",
+        "schema/youtube-bilingual-transcript.json"
+      ],
+      "ownership": "product_merge",
+      "action": "three_way"
+    }
+  ]
+}
