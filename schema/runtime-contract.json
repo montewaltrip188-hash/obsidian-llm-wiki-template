@@ -7,7 +7,9 @@
     "required_range": ">=2.1.0 <3.0.0",
     "tested": {
       "version": "2.1.0",
-      "commit": "4d6ae25b0f195b9efe3ab373a14d83082a403c32"
+      "release_tag": "v2.1.0",
+      "release_tag_commit": "b327974b27b3d345d94b38ad865504aff3a0c5df",
+      "commit": "b327974b27b3d345d94b38ad865504aff3a0c5df"
     },
     "required_entries": [
       "design-juan-wiki",
